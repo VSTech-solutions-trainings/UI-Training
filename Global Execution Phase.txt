@@ -1,0 +1,26 @@
+JavaScript sync or async ? Both sync and async (by default sync - line by line top -bottom , Async coding setTimeout  )
+
+what is sync ? 
+
+what is async ?
+
+------- How JS runs in the behind with a synchronous flow ?----
+
+Whenever a browser sees a JS file - it will create a Global Execution Environment
+
+Global Execution Environment  has 2 phases - 1) Memory allocation phase 
+					     2) Code execution phase
+
+1)Memory allocation phase --
+
+JS engine skims through top-bottom and finds all the variables including functions - allocate some space to these with default values in key-value pairs( a: undefined) (function: fn: {...})
+
+2) Code execution phase --
+
+top-bottom --> and assign values -- if it finds any other function - it will create another Global execution Environment 
+
+
+------- How JS runs in the behind with a asynchronous flow ?----
+
+
+Data types - primitives by value, non primitives by reference
