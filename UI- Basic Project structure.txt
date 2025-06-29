@@ -1,0 +1,87 @@
+UI 
+
+GitHub ---
+JavaScript
+HTML 
+CSS
+
+
+Frameworks/Libraries
+React
+Angular
+
+
+TypeScript 
+
+--Testing
+
+vitest
+
+--Deployment (cloud)
+
+AWS S3
+cloudFront
+route53
+
+Hands on 2 projects with real time project tools, notations, 
+
+Resume building
+How to answer marketing calls
+
+Interview 70-80% 
+
+-----------------------------------------------------------------------------
+
+
+Basic Project structure
+
+Project --- GitHub, GitLab, BitBucket  
+
+Manager - who manages everything including budgets, resources
+Product Owner - PO - What is the requirement ? time ? customers impact ?
+Tech lead - Manager + PO (2 UI developers, 1 BE, 1 testing, 1 support cloud)
+
+scrum master - JIRA board - tech lead + PO -- tickets creating
+
+----------
+
+Sprint ceremonies --- planning, refinement, Demos, sprint 2weeks Wed -week-  Tue
+
+2 UI - Jr - Sign in
+
+	Sr - Sign up 
+
+1 BE 
+
+Environments -  local environment, localhost:5500
+
+		QA/Stage/UAT 
+
+		Production 
+
+
+----
+
+Basic Git commands
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+git clone https://github.com/VSTech-solutions-trainings/UI-Training.git
+
+git pull - to pull the latest from the origin
+
+git checkout <branch-name> - to switch to a new branch, by default main is the default branch.
+
+git add . - to commit the changes to your local
+
+git commit -m "Adding a new file"
+
+git push - to push the changes to the origin 
+
+ 
+
+
+
+
+
