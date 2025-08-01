@@ -1,0 +1,63 @@
+Topics
+-semantic elements
+-default stylings
+-CSS reset
+-margin collapse
+-positioning
+-z-index
+-CSS units
+
+
+-- semantic elements
+- This will describe the meaning and purpose for the browsers or for the developers
+- <header>, <main>, <section>,<nav>, <article>, <aside>, <footer>
+- this will help screen readers
+
+--default stylings
+    - some html elements will have some user-agent defined default styles
+    ex: h1-h6 , default margin 19.920
+    body - margin 8px
+    p - margin top/bottom 16px
+
+CSS reset - this will allow to reset the user-agent default stylings
+
+- box-model - every html element will be rendered as a rectangular box
+    - content , padding, border, margin
+- border-box ??
+    - what is a border-box ? This will calculate the width of the element
+        - by default it will be content-box, so the width of the element will be 
+            - addition of content width + padding + border
+    in the css reset, we have to make box-sizing: border-box
+        - with this width will be the entire element width
+example --
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h2 {
+  border: 1px solid green;
+  width: 100px;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* what is the width of the h2 element 
+it is not just width which is 100px
+it is combination of width(100px) + padding left , right(20 + 20) + border left right(1 + 1)
+*/
+ -----------
+- positioning
+    - static (default positioning)
+    - relative - top, left, right, bottom - these will be applied to on its own element
+    - absolute - top, left, right, bottom - these will be applied based on its parent which has position relative
+                - if there is no parent which has position relative, by default it will take body
+    - fixed - This element will be fixed at its position
+
+-- z-index - when using absolute position, sometimes the element will be stacked, to display which element should be
+            - on top or bottom it is defined by using z-index
+            - higher the z-index , it will be stacked above
+
+- CSS units (px, em, rem) (responsive design, desktop, mobile and all other devices)
