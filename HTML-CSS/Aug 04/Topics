@@ -1,0 +1,35 @@
+Topics
+-box-model
+--content
+--padding
+--border
+--margin
+width, height
+CSS units(px, em, rem, %, vh, vw)
+Google fonts
+Grouping and nesting selectors
+combinators
+Psuedo classes
+Psuedo elements
+
+--- CSS units
+px - fixed unit, used for borders or any small fixed element units
+em - current element's font size, if there is no font-size of the current it will take it's parent font-size
+rem - it is calculated using root element which html element
+% - we use it for responsive, % is calculated based on the parent's width/height
+padding/margin - will be calculated using parent's width
+vh - viewport height - calculated based on the viewport height
+vw - viewport width - calculated based on the viewport width
+
+-- Google fonts
+
+-- Grouping and nesting selectors
+we can combine or use the same css styles for the elements using , comma
+
+--combinators
+<space> - div p - all p elements inside div > - div > p - direct children of div + - div + p - immediate first sibling of div
+~ - div ~ p - all siblings of div
+
+-Psuedo classes - :hover, active, focus, visited, first-child, last-child, nth-child(n), nth-last-child(n)
+
+-Psuedo elements - ::before, ::after, ::first-letter, ::first-line
