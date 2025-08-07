@@ -1,0 +1,10 @@
+$font-size: 60px;
+$color: blue;
+
+@mixin borderMixin {
+  border: 1px solid green;
+}
+
+@mixin fontMixin {
+  font-size: 60px;
+}

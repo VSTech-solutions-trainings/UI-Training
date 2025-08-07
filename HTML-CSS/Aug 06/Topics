@@ -1,0 +1,87 @@
+Topics
+- Inheritance
+- Specificity
+- CSS variables
+- SASS (CSS preprocessor)
+
+
+-- Inheritance
+
+what is Inheritance ?
+
+some properties applied to a parent will be automatically apply to its children.
+Not all the properties will be applied only some properties will be applied
+    example: color, font-size, font-weight (all font related styles will be applied)
+            letter-spacing, line-height
+some properties will not be inherited
+    example: border, margin, width
+
+two types of inheritance, 1)initial 2)inherit
+
+-- Specificity
+
+what is Specificity ?
+
+    styles will be based on the type of selector. It is represented in four parts a,b,c,d
+
+    a - inline styles
+    b - IDs
+    c - classes, attributes, pseudo-classes
+    d - Element names, pseudo-element 
+
+    ex: 0,1,0,0 - 0,0,100,100 // 0,1,0,0 will be the priority if it doesn't have any inline styles
+
+    !important - this will overide all the styles, this is mainly used when we integrate with the third-party libs
+
+--- CSS variables 
+    2 types of variables
+        1) within its own selector - variables will be declared inside a selector and children inside the
+                                        selector will have access to the variables
+        2) root selector - variables will be declared inside :root element (html)
+
+-- SASS ( Syntactically awesome stylesheet - CSS preprocessor) (sass, scss)
+
+    What is SASS ? we can reuse the logic, extend, create variables
+
+        prerq: node
+        npm install --save-dev  sass
+
+        Topics of SASS
+            1)variables
+            2)Nesting
+            3)Operators
+            4)Partials and imports
+            5)Mixins
+            6)extends
+
+    1)variables - variables will be created using $ symbol ex: $font-size: 12px
+    2)nesting - div {
+                    border: 1px solid green;
+
+                    p {
+                        font-size: $font-size;
+
+                        span {
+                        font-size: 30px;
+                        }
+                    }
+                }
+    3)Operators - + - *
+        font-size: $font-size + 2;
+    4)Partials & imports
+        we can have our own files and import them (create a file with _filename.scss)
+        import with @use 'filename'
+    5)mixins - sharing the code and resusing
+        we can create a mixin using below syntax 
+            @mixin borderMixin {
+                border: 1px solid green;
+                }
+            and we can use it as below
+                span {
+                    @include fontMixin;
+                    color: $color;
+                    }
+    6) extends - same concept of mixin which is used to reuse and for sharing the code.
+        use @extend syntax
+
+Next class - Flexbox, CSS grid

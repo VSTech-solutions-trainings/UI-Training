@@ -1,0 +1,9 @@
+@use "variables" as *;
+
+.div-class {
+  border: 1px solid green;
+}
+
+p {
+  @extend .div-class;
+}
