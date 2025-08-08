@@ -1,0 +1,51 @@
+Topics
+Layout models or Layour designs
+
+Before this layout concepts - Floats, inline-block, positioning (deprecated)
+- Flexbox (one dimensional)
+- CSS Grid (two dimensional)
+
+--Flexbox
+
+what is a Flexbox ? This is used to define the layout structure of the app in a one-dimensional way.
+
+There will be two axis (main, cross)
+
+display:flex, by default flex-direction will be row (column, row-reverse, column-reverse)
+
+Below are the concepts of Flexbox
+    gap,
+    justify-content: (center, space-around, space-between, flex-end, flex-start)
+    align-items - this will be applied on cross axis
+      By default all the items will be strecthed to its main axis
+    flex-wrap: nowrap (items inside the flex container will not wrap)
+              by default all the items inside the flex container will not wrap, but we can overide using 
+              flex-wrap:wrap
+    align-content - same as align items but this will be applied only if the parent has flex-wrap:wrap
+    order - by default order will be 0
+    align-self
+    flex-grow, flex-shrink, shorthand flex
+
+---CSS Grid
+
+CSS grid is used for two dimensional rendering or layout
+
+We can also achieve 2 dimensional layout using Flexbox, but it requires additonal markup changes.
+display: grid, all the items inside grid container will be grid items.
+
+  grid-template-columns: 100px 100px; // each column will be divided into 2, which has 100px of width
+  
+  grid-template-rows: 300px 200px 100px;
+
+  column-gap, row-gap, shorthand gap
+
+  instead of writing 1fr,1fr,1fr we can write as repeat(3, 1fr)
+
+  By using below syntax we can spread the width of the element
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  shorthand property for spanning
+
+  justify-content, align-content
