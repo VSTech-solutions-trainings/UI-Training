@@ -1,0 +1,42 @@
+div {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid green;
+  height: 200px;
+}
+
+p {
+  height: 100px;
+  background-color: red;
+  width: 600px;
+  margin: 12px;
+}
+
+@media (max-width: 600px) {
+  div {
+    flex-direction: column;
+  }
+
+  p {
+    background-color: green;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  div {
+    flex-direction: column;
+  }
+
+  p {
+    background-color: blue;
+  }
+}
+
+@media print {
+  div {
+    flex-direction: column;
+  }
+  p {
+    background-color: darkorange;
+  }
+}

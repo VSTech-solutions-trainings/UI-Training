@@ -1,0 +1,28 @@
+Topics
+    Media queries (Responsive web design) 
+    our website/app should be Responsive on all the devices (mobiles, laptops, desktop, projectors)
+
+Basic syntax
+
+    @media (condition) {
+        CSS rules 
+    }
+
+list of devices - all, screens, print
+
+we can have conditions like, 
+    width,min-width, max-width - viewport width
+    height, min-height, max-height - viewport height
+
+conditional cases - AND OR NOT (and , not)
+
+add media queries at the last, media queries will not have any specificity
+
+Assignment - Try to research on the specificity when using media queries
+
+List of devices width
+    320px - small phones
+    480px - large phones
+    780px - tablets
+    1024px - laptops
+    1200px - Desktops
