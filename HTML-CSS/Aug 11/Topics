@@ -1,0 +1,78 @@
+Topics
+Transformations
+Transitions
+Animations
+
+- Transformations
+
+what are Transformations  ? This is one kind of css syntax which will manipulate an element's size,shape, position etc.
+
+syntax
+    selector {
+        transform: transform-func
+    }
+
+    Below are the in-built transform functions
+
+    translate(x,y) 
+    translateX(20px)
+    translateY(30px)
+    scale(2)
+    scaleX(2)
+    scaleY(2)
+    rotate(45deg)
+
+- Transitions
+
+what are transitions ? This will let you animate the changes smoothly over time instead of instantly.
+
+    syntax
+        selector {
+            transition: property/transform-name transition-duration transition-func transition-delay
+        }
+
+ Assignment - Will transitions applies to all the properties or not ?
+
+- Animations
+
+First we have to define the animation using @keyframes
+
+syntax 
+
+    selector {
+        animation-name: <animation-name>;
+        animation-duration: 5s
+    }
+
+    we can use shorthand 
+
+    selector {
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+
+    @keyframes bgcolorchange {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: cadetblue;
+  }
+}
+
+instead of from, to we can use % 
+
+@keyframes bgcolorchange {
+  10% {
+    background-color: red;
+  }
+  30% {
+    background-color: cadetblue;
+  }
+  60% {
+    background-color: black;
+  }
+  100% {
+    background-color: violet;
+  }
+}
+
