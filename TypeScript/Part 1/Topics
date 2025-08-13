@@ -1,0 +1,77 @@
+Aug 13, 2025
+
+Topics
+- What is TypeScript ?
+- Why do we need it ?
+- what problems it will solve compare to JavaScript ?
+- will browsers support TypeScript ?
+- how do we compile TypeScript code ?
+- installation
+- Basic types
+
+-- what is a TypeScript ? This is used for static typing and to detect early defects/bugs in the code.
+
+browsers will not support TypeScript. Browsers supports only JavaScript, so we have to convert/transpile ts code to js code
+
+we need TypeScript compiler/transpiler
+
+Below command is used to install TypeScript
+
+npm install -g TypeScript
+
+tsc --version - to check the version of tsc
+
+we can transpile a ts file to js file using tsc filename.ts
+This will create a filename.js file
+
+In large project we can configure the tsc using a config file (tsconfig.json)
+
+tsconfig file will be created using tsc --init
+
+tsc --watch (This is to watch all the changes and compile the code)
+
+Basic types of TypeScript
+
+1. JavaScript types - primitive, non-primitives
+
+Type assignment vs Type inference
+
+    let age: number = 12 //This is Type assignment
+
+    let age = 12 // Type inference
+
+We can create our own types using type alias
+
+    type age = number 
+
+    let personAge: age = 12;
+
+any type
+
+let personDetails: any = 12;
+personDetails = 'Mike'
+
+any will not restrict the type of the variable( DO NOT OVER USE any type)
+
+Union type 
+
+    let personDetails: number | string;
+
+Array type
+
+    let personAge: string[] = ["1", "2", "3"];
+
+    let newNumber = "4";
+
+    personAge.push(newNumber);
+
+Tuples type 
+
+    let personAge: [number, string]
+
+    personAge = [22, 'Mike']
+
+Next class - Part 2 ( advanced types)
+Part 3 - Classes, interfaces, Generics
+
+Friday - HTML CSS JavaScript SASS
