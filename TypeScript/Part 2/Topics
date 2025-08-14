@@ -1,0 +1,22 @@
+Part 1 Topics covered so far
+- what is Typescript
+- Why do we need it
+- installation
+- tsconfig
+- Basic types
+- Javascript types
+- Unions, Tuples, Array
+
+- Advanced types
+Object
+{} - any non-nullish value
+Record
+enum
+return types in functions
+void
+never
+Optional types in functions - ?
+functions as types
+type gaurds
+
+- Part 3 - Classes, interfaces, Generics
