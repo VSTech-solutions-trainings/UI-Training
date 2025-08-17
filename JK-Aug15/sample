@@ -1,0 +1,26 @@
+// arrow function, let & const keywords, template literals, destructuring,
+// spread and rest operator, modules, ternery, map, set, async/await, callback  
+
+import React, { useState } from "react";
+ 
+function Counter() {
+  // useState hook for managing state
+  const [count, setCount] = useState(0);
+ 
+  // handler function
+  const increment = () => setCount(count + 1);
+  const decrement = () => setCount(count - 1);
+ 
+  return (
+<div style={{ textAlign: "center", marginTop: "50px" }}>
+<h2>Counter App</h2>
+<p>Count: {count}</p>
+<button onClick={decrement}>-</button>
+<button onClick={increment} style={{ marginLeft: "10px" }}>
+        +
+</button>
+</div>
+  );
+}
+ 
+export default Counter;
