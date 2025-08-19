@@ -1,0 +1,52 @@
+UI
+
+HTML
+CSS
+JavaScript 
+
+jQuery - library 
+
+-- libraries - React
+-- Framework - angular 
+
+BE node java 
+
+Central repo - github, gitlab, bitbucket 
+
+Types for environments -- local, 
+						  Staging, QA, UAT,  (lower environment) non-prod
+						  PROD (higher environment)
+
+-------(Refinements, demos, meetings) 
+Project - Sprint 1 Wednesday 99.99% 18th - July 1
+Sprint 2  
+
+Every week wednesday 9PM 
+
+Figma UX screens  
+
+-End clients/Customers  
+
+
+	- Manager 
+	- Product Owner
+	- Tech Lead
+	- scrum master (features, enhancements, bugfix, hotfix)
+	
+	Developer
+		- UI developers 3 members 
+		- BE developers
+		- QA members
+		
+		
+Softwares 
+	1. JIRA
+	2. Code repository - Github, gitlab, bitbucket
+	
+	UI development - node, npm, vscode, sublime,  light weight UI 
+	
+	
+Next class 
+	1. github - gitbash terminal , command, terminal
+		clone, branch, push (remote)
+	2. JavaScript (Variables, functions ES6 ES7 ES8...)

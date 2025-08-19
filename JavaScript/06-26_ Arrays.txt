@@ -1,0 +1,117 @@
+//Definition - An array is a collection of elements of different data type or same data types.
+
+//Different ways of creating arrays
+
+//1. Using Array literal using []
+
+var students = ['Mike', 'John']
+
+//2. using [] array and adding elements into it
+
+var age = []
+age[0] = '1'
+
+//console.log(age)
+
+//3. Defining an array using Array constructor function
+var age = new Array('1', '2', '3')
+
+//console.log(age)
+
+//4. Using Array from method
+
+var players = ['sachin']
+
+var oldPl = Array.from(players)
+
+//console.log(oldPl)
+
+//5. using Array.of method
+
+var players = 'sachin'
+
+var oldPl = Array.of('a', 'b', 'c')
+
+//console.log(oldPl)
+
+/// How do we check if it is an array ?
+
+var a = 1
+
+//console.log(Array.isArray(a)) //Array
+
+// Mutable and immutable -- mutation, non-mutation
+
+//what is a mutation ? Which changes the existing object with an operation
+//what is immutable - even if we perform some actions on the object, the object doesn't change
+
+var students = ['Mike', 'John']
+
+var len = students.length;
+
+//console.log(students) 
+
+///////// Built in methods of Array (length, push,pop, unshift, shift, join )
+
+// functions inside an object are called Methods --
+
+var students = ['Mike', 'John']
+
+//push - adds an element to the last index
+//students.push('Max')
+// students.push('Jooo')
+
+// console.log(students)
+
+
+//pop method
+var students = ['Mike', 'John']
+// students.pop()
+// students.pop()
+
+//console.log(students)
+
+//unshift - add elements to the first index
+
+var students = ['Mike', 'John']
+
+students.unshift('Max')
+//console.log(students)
+
+//shift - remove elements from the first index
+
+var students = ['Mike', 'John', 'Max']
+//console.log(students.slice(1,2))
+
+//join method - takes all the elements from the array and joins as a string
+
+var students = ['Mike', 'John', 'Max']
+//console.log(students.at(-2))
+
+//at - method similar to [0] but accepts negative index also
+
+/// find, findIndex, includes, indexOf, lastIndexOf
+
+
+//includes
+var students = ['Mike', 'John', 'Max', 'Sachin']
+
+//console.log(students.includes('John11'))
+
+
+//find
+var students = [2, 2, 2, 2, 21]
+
+var ind = students.every(function(ele) {
+    if(ele == 2) {
+        return ele
+    }
+})
+
+console.log(ind)
+//some every method
+
+//Objects ---
+
+
+

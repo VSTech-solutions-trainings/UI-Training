@@ -1,0 +1,42 @@
+July 02, 2025
+
+Topics
+	Recap of scoping - Global, Function and Block
+	
+	let, const - ES6 
+	
+	callback function - a function which is sent as a argument to another function which will be executed inside the parent function.
+		This parent function nothing but a higher-order-function
+		
+	higher-order-function - a function which accepts another function as a parameter is called a higher-order-function.
+	
+	Strings, 
+		//what is a string
+		//primitive data type - Number, Boolean, String, null, undefined
+
+		var firstName = "MAxM" // maxm // MAxm // MAXm
+
+		//built in methods of String
+		var res = firstName.length // This will log the length of the string
+		var res = firstName.charAt(1) // This will log 'a', it will take only the positive values
+		var res = firstName.at(-3) // same as charAt but this will accept negative value or index
+		var res = firstName.indexOf('p') // if it didn't find the chat it will return -1
+		var res = firstName.includes('o') // internally uses indexOf - -1 return false, else return true
+		var res = firstName.toUpperCase() // converts into uppercase - MAX
+		var res = firstName.toLowerCase() // converts into uppercase - max
+		var res = firstName.replace('M', 'T') // This will replace the first occurence of the char
+		var res = firstName.replaceAll('M', 'T') // This will replace all the occureneces of the char
+		var res = firstName.lastIndexOf('A') // This will find out the last index of the char
+
+		console.log(res)
+	
+	
+	Arrays
+	
+	Next class
+	10 mins - assignment, primitive data types, scoping, string functions
+		ES6 map, filter, reduce
+			closures
+			hoisting
+			Functions
+			Objects

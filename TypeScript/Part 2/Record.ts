@@ -1,24 +1,21 @@
-type details = string | number;
+class Person {
+  private _name: string;
+  constructor(name: string) {
+    this._name = name;
+  }
 
-let personDetails: Record<details, number>;
+  get name() {
+    return this._name;
+  }
 
-personDetails = {
-  name: 9090,
-  age: 12,
-  id: 121,
-  12: 909,
-};
+  set name(name: string) {
+    if (name.length > 0) {
+      this._name = name;
+    } else {
+      throw new Error("Name should be more");
+    }
+  }
+}
 
-//This will not restrict the structure of the object but this will define what type should be
-//given for keys and values
-
-//example 2
-
-type namesAccepted = "Mike" | "Tom";
-
-let MikeDetails: Record<namesAccepted, number>;
-
-MikeDetails = {
-  Mike: 12,
-  Tom: 33,
-};
+let mike = new Person("Mike");
+mike.name = "";
