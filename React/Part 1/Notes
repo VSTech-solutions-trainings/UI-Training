@@ -1,0 +1,117 @@
+Topics covered so far
+- JavaScript
+- HTML
+- CSS
+- SASS (SCSS)
+- TypeScript
+
+------------ Fundamental concepts of react -------------
+
+- What is react ?
+- Library vs framework ?
+- Diff between Single-page App vs Multi-page app ?
+- We can design UI using plain JavaScript, HTML, CSS , then why do we need other lib or frameworks ?
+- Build tools
+- How many ways can we create a react app ( 2 types CRA, Vite)
+
+
+-----------
+
+What is react ?
+
+React is a library that lets you build user interfaces(UI) out of individual pieces called components.
+Here components are the basic building blocks of an app.
+
+components
+Article.jsx ( 3 p tags )
+
+pages
+Home.jsx
+
+files
+Article.jsx
+Home.jsx
+<div>
+<Article />
+<Article />
+<Article />
+<Article />
+</div>
+---
+library vs framework ?
+
+library is a combination of functions/utility methods. This is under developers control.
+
+framework - it consists of list of rules to be followed in order to create an app. Frameworks control everything.
+example - routing
+app.routing.ts
+
+we have to maintain the file structure.
+
+--------- Single page(SPA) vs multi page ---------
+
+Traditional websites (www.traditional.com/home.html)
+- Home, contact, About us, careers
+
+When a user clicks on any link ex: contact - request again goes to the BE server 
+www.traditional.com/contact.html
+
+a user clicked another link ex: careers - another request goes to the BE server
+
+www.traditional.com/careers.html
+
+Modern websites - Single page (only it loads index.html)
+
+index.html (root element) - this uses routing mechanism
+
+<div id=root">contact related info will be rendered here</div>
+
+------ We can also build websites/tools using js, html, css, then why do we need these libs or frameworks ?
+
+We can avoid below problems
+-we can design spa 
+-unneccesary repitition of same logic. (components)
+-state management hell (modern websites - we have so many state management techniques, redux)
+-performance/optimization (5 mins) (libs or framework uses modern tools for optimization and to improve performance)
+
+minification var l = 9 (800kb) 2kb
+
+------- build tools ---
+
+what are build tools ?
+
+React(JSX), TypeScript - browsers will not understand (webpack) (it will optimize/bundles js, html,css)
+babel.js - which will convert ts/jsx to js 
+
+React uses Vite as build tool or it can be used for development server(fast) - upfront bundling will not happen
+Vite uses esbuild to build the application and it uses RollUp in production server
+Vite uses HRM (Hot reload Module) - this uses diffing terminology
+
+----------
+How many ways can we create a react app ( 2 types CRA, Vite)
+
+pre-req - node 18+ (npm)
+
+Create 2 react applications using
+1)create-react-app
+2)vite
+
+
+Next class - different files inside the react project (public, src, package.json, package-lock.json, node_modules)
+JSX, props, children, render props
+
+hooks
+state management (useCoontext)
+performance
+custom hooks
+forms handle (form libraries)
+redux
+redux toolkit
+react router
+hooks vs redux
+react query 
+react toolkit query
+authentication
+deployment (AWS S3) - cloudFront, route53
+
+Best practices and optimization techniques
