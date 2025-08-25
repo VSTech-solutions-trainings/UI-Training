@@ -1,0 +1,26 @@
+Aug 25, 2025
+Topics
+.gitignore
+React Fragments
+props
+children
+How data flows ? one way binding or two way ?
+render props
+Two ways for creating react components 1) Class 2) Functional
+Introduction for class components
+How to manage state in the components
+
+        Hooks introduction
+
+---
+
+.gitignore - to ignore the files to be committed to git
+React Fragments - to avoid unnecessary DOM nodes on the UI
+Syntax - <></>
+props - properties of the react component which is nothing but a javascript object - in simpler way we can use object destructuring
+
+children - the content which is embedded inside the custom component
+
+data flow in react - always one way data binding (parent - child), but there are some ways we can implmenet two way data binding
+
+render props - ? since react is always one way binding, we pass functions as props to manipulate parent's data.
