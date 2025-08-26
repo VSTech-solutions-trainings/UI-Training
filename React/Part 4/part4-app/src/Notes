@@ -1,0 +1,47 @@
+Topics
+- Diff between class vs functional components
+- state management - hook - useState
+- rules of useState and how this will work ?
+- useRef
+- createPortal
+- props drilling
+- useContext
+---
+Diff between class vs functional components
+
+life cycle methods
+
+These are all in-built functions which will be called in the behind
+Basically there are three important life cycle methods
+1) constructor
+2) componentDidMount
+3) componentDidUpdate
+4) componentWillUnmount
+
+functional components can also achieve life cycle methods functionality using a hook called useEffect
+
+1) state management - useState
+
+useState is a hook to maintain the state of a component, by using normal variables react will not re-render.
+
+syntax
+
+const [age, setAge] = useState(initialValue)
+
+---- useRef
+
+useRef will not re-render the component, it remembers the previous initialValue
+
+whereas when a value changes in useState, the component will be re-rendered.
+---
+createPortal
+we can inject the component inside any element.
+---
+props drilling
+
+- Even though the component doesn't require the values we have to send it as props so that it children can use it
+- This is called props drilling
+
+To avoid this situation we have a hook called useContext.
+
+Next class - useContext, useReducer, use
