@@ -1,0 +1,26 @@
+Topics
+- use of keys
+- useState rules
+- state management for a complex objects
+- useReducer
+- props drilling
+- useContext (Context API)
+
+
+----
+
+- key - whenever we iterate a list on the UI we have to provide a unique key prop to let react know how to render them on the UI
+- uuid
+- npm install uuid
+---
+useState rules
+- whenever we update a state value which is dependent on its prev values always use a callback func which accepts prev value
+
+
+-- state management for a complex object
+
+In order to manage complex objects, react provides a hook called useReducer
+
+syntax
+
+const [state, dispatch] = useReducer(reducerFunc, complexObjectState);
