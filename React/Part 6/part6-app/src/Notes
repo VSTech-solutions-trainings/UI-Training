@@ -1,0 +1,67 @@
+Topics
+- Topics covered so far
+library vs framework
+what is JSX
+How many ways we can create a react app
+create a first component
+props
+children
+render props
+useState
+useRef
+createPortal
+useReducer - to manage complex state
+props drilling
+solution for props drilling - useContext
+
+Today's Topics
+what are side effects
+overview of life cycle methods
+useEffect
+React developer tools
+
+
+----
+
+what are side effects ?
+
+Actions/Tasks which are performed outside of react rendering world, that is called a side effect.
+
+use cases:
+1) fetching data from an API
+2) logging
+3) Websocket, events
+4) DOM updates 
+
+Life Cycle methods inside class
+
+1) constructor
+
+2) componentDidMount
+3) componentDidUpdate
+4) componentWillUnMount
+
+we can replicate same life cycle methods inside functional components using a hook called useEffect (this is mainly used for side effects)
+
+syntax of useEffect
+
+useEffect(() => {
+  // side effect
+
+  return () => {
+  // clean up 
+  }
+}, [dependecies])
+
+rules of useEffect
+
+1) useEffect should not be written inside a functional
+2) we can either pass dependecies nor we can ignore it
+3) if we ignore it, then useEffect will be called whenever there is an update/modify of a state variable
+
+4) if we don't pass any dependecies array, useEffect will be triggered every time when there is a rendering of that component.
+5) if we pass empty dependecies [] - then it will be called only once.
+
+React developer tools
+
+next class - optimization techniques, useCallback, useMemo, memo
