@@ -1,0 +1,58 @@
+import { memo } from "react"
+
+Topics
+
+Performance and optimization
+
+1)memoization
+2)How many ways will a component renders ?
+3)memo - this is for entire component
+4)useCallback - this is for functions which are passed as props
+5)useMemo - this is also for the functions inside the component which has high computed values
+
+what is a memoization ? Solution will be cached and if the same input is used again, instead of recalculating
+it will fetch the solution from cache.
+
+function square(n){
+    return n * n
+}
+
+square(1)
+square(3)
+square(4)
+square(5)
+square(3)
+square(4)
+square(5)
+square(10)
+
+-----------
+
+App -> ChildComponent 
+
+1)Initial render
+2) if any props changes for that component
+3) if a state value changes in that component
+4) if its parent renders, then all its children also renders
+
+optimization techniques in React
+1) memo
+
+if we use memo then we can skip the re-rendering when there is no props changed
+
+useCallback - we can memoize the functions inside the component, so the function will be recreated only it dependecies changes
+
+useMemo
+
+we can memoize the highly computed operations using useMemo hook.
+This will be recalculated when there is a deps changes.
+
+--- Next class
+
+custom hooks
+How to handle forms inside react ( Form handling )
+
+redux
+react context vs redux
+react Router
+Deploying our react app to AWS s3
