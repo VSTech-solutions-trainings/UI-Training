@@ -1,0 +1,34 @@
+Topics 1) Utility functions 2) Rules of hooks 3) Custom hooks 4) Form handling 1) controlled components 2) uncontrolled components
+
+--
+
+1. Utility functions
+
+   - Instead of repeating the logic, we can have it in an external file(utils file) and we can reuse it.
+
+2. Rules of hooks
+
+   - example of hooks (useMemo, useReducer, useState, useEffect, useRef, useContext)
+   - camelCase, always a hook starts with 'use'
+   - always hooks should be on top of return statement and hooks should not be inside any other function other than react comp
+   - we can create our own hooks and we can add react hooks inside it.
+
+3. Custom hooks
+
+Difference between normal func vs custom hooks ?
+
+- we cannot use hooks inside a normal func whereas with custom hooks we can
+- use react hooks and custom hooks.
+- Even custom hooks should start with 'use'
+
+4. Form handling
+
+1) controlled components - all the input values are controlled by react state concept.
+2) uncontrolled components - all the input values are controlled using useRef instead of useState
+
+5. React has some form handling libraries ( Formik, React Hook Form)
+
+Assignment - Convert LoginForm and Signup form using React Hook Form 1) validations - name should not be empty 2) password - should not be empty and should be greater than 10 letters
+If we enter some invalid values then it should show some errors
+
+Next class - Redux, router, deployment to AWS S3
