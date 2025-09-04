@@ -1,0 +1,28 @@
+Topics
+- Props drilling
+- Context API (useContext) - This is used for small/medium apps
+- Redux -
+- How we use redux in react ?
+
+
+-------------
+
+Redux - This is not in-built react feature. This is a third party library.
+This is used for state management.
+
+Redux Core Concepts
+- Store ( This is a centralized object where state lives)
+- Action - This is a plain object which determines what data/action should be done inside a Store
+- Reducer - This is a just plain JS function which takes current state and action and returns a new state
+
+- Dispatch - This is used to Dispatch some actions to the store.
+- Selector - This is also a JS function to read state from the store.
+
+How can we use Redux concepts in a react app ?
+
+Redux ToolKit (RTK) - This is the official way to use redux inside react and this is the modern way
+
+npm install @reduxjs/toolkit react-redux - This will do the store setup
+npm install react-redux - This is used for connecting react to the redux
+---
+Next class - React Router, Deploy to AWS S3
