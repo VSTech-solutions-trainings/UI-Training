@@ -1,0 +1,33 @@
+Topics
+
+1. Diff between MPA vs SPA
+2. How to install react router
+3. How to defines routes
+4. Link and NavLink
+5. useNavigate
+6. useParams - Assignmet
+7. Nested routes
+8. Wild card routes
+
+--- Installation of react router
+
+npm install react-router-dom
+
+In order to use routes for the application, we have to wrap the App component with BrowserRouter
+
+Then we have to define the routes using Routes and Route component
+
+Then we have to define the links to which the routes should be linked using Link
+
+Diff btwn Link and NavLink -NavLink will provided a className to whic we can add styling to the active link
+
+useNavigate is a hook which we can use to navigate to any route
+
+syntax : const navigate = useNavigate()
+<button onClick={() => navigate("/learn")}>Back to learn</button>
+
+-- wild card routes
+
+always place wild card routes at the last
+
+Next class - React router params, AWS S3, resume
